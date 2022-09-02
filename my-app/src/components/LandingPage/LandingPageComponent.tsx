@@ -10,7 +10,7 @@ const LandingPage = () => {
 
   return (
     <div>
-      <button onClick={clickHandler}>Add a sentence</button>
+      <button onClick={clickHandler} className="btn toggle-btn" aria-pressed="true" >Add a sentence</button>
     </div>
   );
 };

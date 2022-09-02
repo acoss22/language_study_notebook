@@ -25,7 +25,7 @@ const AddSentence = () => {
         value={quote.word}
         autoComplete="off"
       />
-      <button onClick={handleClick}>Add</button>
+      <button onClick={handleClick} className="btn toggle-btn" aria-pressed="true" >Add</button>
       
     </div>
   );
