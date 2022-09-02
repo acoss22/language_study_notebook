@@ -1,5 +1,3 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -7,7 +5,8 @@ import {
   Link,
   Routes
 } from "react-router-dom";
-import LandingPage from './components/LandingPageComponent';
+import LandingPage from './components/LandingPage/LandingPageComponent';
+
 
 function App() {
   return (
