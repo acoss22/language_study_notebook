@@ -2,10 +2,14 @@ import React from 'react';
 
 const LandingPage = () => {
 
+const clickHandler = () => {
+    
+}
+
     return(
     <div>
-        <button>
-            Add a sentence!
+        <button onClick={clickHandler}>
+            Add a sentence
         </button>
     </div>
     )
