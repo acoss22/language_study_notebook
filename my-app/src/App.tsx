@@ -6,6 +6,7 @@ import {
   Routes
 } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPageComponent';
+import AddSentence from './components/AddSentence/AddSentenceComponent';
 
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
         <Routes>
           <Route path="/"  element={
             <LandingPage /> 
+          }
+          />
+          <Route path="/addSentence"  element={
+            <AddSentence /> 
           }
           />
         </Routes>
