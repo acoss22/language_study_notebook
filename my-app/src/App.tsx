@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPageComponent';
 import SentencesPage from './components/SentencesPage/SentenceComponent';
+import AlphabetPage from './components/AlphabetPage/AlphabetComponent';
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
           />
           <Route path="/sentences"  element={
             <SentencesPage />
+          }
+          />
+           <Route path="/alphabet"  element={
+            <AlphabetPage />
           }
           />
         </Routes>

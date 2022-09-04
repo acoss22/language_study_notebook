@@ -1,12 +1,14 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import  sentenceReducer from '../reducers/sentenceReducers/sentenceReducer';
 import thunk from 'redux-thunk';
+import alphabetReducer from "../reducers/alphabetReducers/alphabetReducer";
 
 const initialState : any = { };
 
 const reducer = combineReducers(
     {
-        sentences: sentenceReducer
+        sentences: sentenceReducer, 
+        alphabet: alphabetReducer
     });
 
 declare global {
