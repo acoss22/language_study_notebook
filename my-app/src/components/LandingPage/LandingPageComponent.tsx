@@ -1,11 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import AddSentence from "../SentencesPage/AddSentenceComponent";
 
 const LandingPage = () => {
   const navigate = useNavigate();
 
   const clickHandler = () => {
-    navigate("/addSentence");
+    navigate("/sentences");
   };
 
   return (

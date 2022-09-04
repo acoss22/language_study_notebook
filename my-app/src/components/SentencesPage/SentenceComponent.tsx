@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addSentence, deleteSentence, editSentence } from "../../actions/sentence/actions";
 import SentenceItem from "./SentenceItem";
 
-const AddSentence = () => {
+const SentencePage = () => {
   const words = useSelector((state: any) => state.sentences.items);
   const dispatch = useDispatch();
   const [quote, setQuote] = useState('');
@@ -57,4 +57,4 @@ const AddSentence = () => {
   );
 };
 
-export default AddSentence;
+export default SentencePage;

@@ -6,7 +6,7 @@ import {
   Routes
 } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPageComponent';
-import AddSentence from './components/SentencesPage/AddSentenceComponent';
+import SentencesPage from './components/SentencesPage/SentenceComponent';
 
 
 function App() {
@@ -22,8 +22,8 @@ function App() {
             <LandingPage /> 
           }
           />
-          <Route path="/addSentence"  element={
-            <AddSentence /> 
+          <Route path="/sentences"  element={
+            <SentencesPage />
           }
           />
         </Routes>
