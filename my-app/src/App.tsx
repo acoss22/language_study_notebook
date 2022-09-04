@@ -6,7 +6,7 @@ import {
   Routes
 } from "react-router-dom";
 import LandingPage from './components/LandingPage/LandingPageComponent';
-import AddSentence from './components/AddSentence/AddSentenceComponent';
+import AddSentence from './components/SentencesPage/AddSentenceComponent';
 
 
 function App() {

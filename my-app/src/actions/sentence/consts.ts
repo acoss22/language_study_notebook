@@ -1,4 +1,4 @@
-enum sequenceActions {
+enum sentenceActions {
 
     SENTENCE_CREATE_REQUEST = "SENTENCE_CREATE_REQUEST",
     SENTENCE_CREATE_SUCCESS = "SENTENCE_CREATE_SUCCESS",
@@ -12,4 +12,4 @@ enum sequenceActions {
 
 }
 
-export { sequenceActions };
+export { sentenceActions };

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import AddSentence from "../AddSentence/AddSentenceComponent";
+import AddSentence from "../SentencesPage/AddSentenceComponent";
 
 const LandingPage = () => {
   const navigate = useNavigate();

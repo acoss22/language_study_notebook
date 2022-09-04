@@ -1,8 +1,8 @@
 import { Reducer } from "redux";
-import { sequenceActions } from "../../actions/sequence/consts";
+import { sentenceActions } from "../../actions/sentence/consts";
 import { Action, Keys } from "../../types/index";
 
-type ActionsType = Keys<typeof sequenceActions>;
+type ActionsType = Keys<typeof sentenceActions>;
 
 const initialState: any = { items: [] };
 
@@ -11,55 +11,55 @@ const sentenceReducer: Reducer = (
     action: Action<ActionsType>
 ) => {
     switch (action.type) {
-        case sequenceActions.SENTENCE_CREATE_REQUEST:
+        case sentenceActions.SENTENCE_CREATE_REQUEST:
             return {
                 ...state,
                 loading: true,
             };
-        case sequenceActions.SENTENCE_CREATE_SUCCESS:
+        case sentenceActions.SENTENCE_CREATE_SUCCESS:
             return {
                 ...state,
                 loading: false,
                 success: true,
                 items: [...state.items, action.payload],
             };
-        case sequenceActions.SENTENCE_CREATE_FAIL:
+        case sentenceActions.SENTENCE_CREATE_FAIL:
             return {
                 ...state,
                 loading: false,
                 error: action.payload,
             };
-        case sequenceActions.SENTENCE_EDIT_REQUEST:
+        case sentenceActions.SENTENCE_EDIT_REQUEST:
             return {
                 ...state,
                 loading: true,
             };
-        case sequenceActions.SENTENCE_EDIT_SUCCESS:
+        case sentenceActions.SENTENCE_EDIT_SUCCESS:
             return {
                 ...state,
                 loading: false,
                 success: true,
                 items: state.items.map((item: any, i: any) => (i === action.payload.index) ? action.payload.newValue : item ),
             };
-        case sequenceActions.SENTENCE_EDIT_FAIL:
+        case sentenceActions.SENTENCE_EDIT_FAIL:
             return {
                 ...state,
                 loading: false,
                 error: action.payload,
             };
-        case sequenceActions.SENTENCE_DELETE_REQUEST:
+        case sentenceActions.SENTENCE_DELETE_REQUEST:
             return {
                 ...state,
                 loading: true,
             };
-        case sequenceActions.SENTENCE_DELETE_SUCCESS:
+        case sentenceActions.SENTENCE_DELETE_SUCCESS:
             return {
                 ...state,
                 loading: false,
                 success: true,
                 items: state.items.filter((item :any, index:any) => index !== action.payload),
             };
-        case sequenceActions.SENTENCE_DELETE_FAIL:
+        case sentenceActions.SENTENCE_DELETE_FAIL:
             return {
                 ...state,
                 loading: false,

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addSentence, deleteSentence, editSentence } from "../../actions/sequence/actions";
+import { addSentence, deleteSentence, editSentence } from "../../actions/sentence/actions";
 import SentenceItem from "./SentenceItem";
 
 const AddSentence = () => {
